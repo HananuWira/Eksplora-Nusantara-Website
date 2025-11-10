@@ -1,0 +1,123 @@
+:root{
+  --biru:#0077b6;
+  --cyan:#00b4d8;
+  --birgel:#023e8a;
+  --bg:#eaf6ff;
+}
+
+body{
+    font-family:"Poppins",sans-serif;
+    background:var(--bg);color:#022;
+    margin:0;
+}
+.container{
+    max-width:1080px;
+    margin:0 auto;
+    padding:1rem;
+}
+
+.header{
+    background:#e6d8c365;
+    border-bottom:1px solid rgba(0,0,0,0.04);
+    position:sticky;
+    top:0;
+    z-index:40;
+    backdrop-filter: blur(10px);
+}
+.header-flex{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:.8rem 1rem;
+}
+.brand{
+    display:flex;
+    align-items:center;
+    gap:.6rem;
+}
+.logo-img{
+    width:44px;
+    height:44px;
+    object-fit:contain;
+}
+.logo-text{
+    color:var(--biru);
+    font-size:1.4rem;
+    font-weight:700;
+    line-height:1;
+}
+.logo-text span{
+    color:var(--cyan)
+}
+.main-nav .nav{
+    list-style:none;
+    display:flex;
+    gap:1rem;
+}
+.nav a{
+    text-decoration:none;
+    color:var(--birgel);
+    font-weight:600;
+    padding:.35rem .5rem;
+    border-radius:8px;
+    transition:.3s;
+}
+.nav a:hover{
+    background:linear-gradient(90deg,var(--biru),var(--cyan));
+    color:#fff;
+    transform:translateY(-2px);
+}
+
+.hero{
+  background:url('ntt.jpg') center/cover no-repeat;
+  text-align:center;
+  padding:5rem 1rem;
+  color:#fff;
+  background-blend-mode:multiply;
+  background-color:rgba(0,0,0,0.45);
+}
+.hero h1{
+    font-size:2.4rem;
+    margin-bottom:0.5rem;
+}
+.hero p{
+    font-size:1.1rem;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:1rem;
+    margin-top:1rem;
+}
+.card{
+    background:#fff;
+    border-radius:10px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+    transition:.3s;
+    overflow:hidden;
+}
+.card img{
+    width:100%;
+    height:170px;
+    object-fit:cover;
+}
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 8px 24px rgba(0,0,0,0.15);
+}
+.card h3{
+    margin:.8rem;
+    color:var(--biru);
+}
+.card p{
+    margin:0 .8rem 1rem;
+    color:var(--birgel);
+}
+
+.site-footer{
+    background:#E6D8C3;
+    text-align:center;
+    padding:1rem;
+    margin-top:2rem;
+}

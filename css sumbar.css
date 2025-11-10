@@ -1,0 +1,119 @@
+:root{
+  --hijau:#2b9348;
+  --lime:#55a630;
+  --abu:#2d4739;
+  --bg:#f2f9f2;
+}
+
+body{
+    font-family:"Poppins",sans-serif;
+    background:var(--bg);color:#222;
+    margin:0;
+}
+.container{
+    max-width:1080px;
+    margin:0 auto;
+    padding:1rem;
+}
+.header{
+    background:#e6d8c37c;
+    border-bottom:1px solid rgba(0,0,0,0.04);
+    position:sticky;
+    top:0;
+    z-index:40;
+    backdrop-filter: blur(10px);
+}
+.header-flex{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:.8rem 1rem;
+}
+.brand{
+    display:flex;
+    align-items:center;
+    gap:.6rem;
+}
+.logo-img{
+    width:44px;
+    height:44px;
+    object-fit:contain;
+}
+.logo-text{
+    color:var(--hijau);
+    font-size:1.4rem;
+    font-weight:700;
+}
+.logo-text span{
+    color:var(--lime);
+}
+.main-nav .nav{
+    list-style:none;
+    display:flex;
+    gap:1rem;
+}
+.nav a{
+    text-decoration:none;
+    color:var(--abu);
+    font-weight:600;
+    padding:.35rem .5rem;
+    border-radius:8px;
+    transition:.3s;
+}
+.nav a:hover{
+    background:linear-gradient(90deg,var(--hijau),var(--lime));
+    color:#fff;
+    transform:translateY(-2px);
+}
+
+.hero{
+    background:url('bandung.jpg') center/cover no-repeat;
+    padding:5rem 1rem;
+    text-align:center;
+    color:#fff;background-color:rgba(0,0,0,0.4);
+    background-blend-mode:multiply;
+}
+.hero h1{
+    font-size:2.4rem;
+}
+.hero p{
+    font-size:1.1rem;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:1rem;
+    margin-top:1rem;
+}
+.card{
+    background:#fff;
+    border-radius:10px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+    transition:.3s;
+    overflow:hidden;
+}
+.card img{
+    width:100%;
+    height:170px;
+    object-fit:cover;
+}
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 8px 24px rgba(0,0,0,0.15);
+}
+.card h3{
+    margin:.8rem;
+    color:var(--hijau);
+}
+.card p{
+    margin:0 .8rem 1rem;
+    color:var(--abu);
+}
+
+.site-footer{
+    background:#E6D8C3;
+    text-align:center;
+    padding:1rem;
+    margin-top:2rem;
+}
